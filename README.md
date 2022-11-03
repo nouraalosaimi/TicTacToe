@@ -60,7 +60,7 @@ Minimax is a type of artificial intelligence that is used in two-player games li
 Alpha-beta pruning is a search strategy that seeks to minimize the number of nodes in the search tree that are evaluated by the minimax algorithm. It is an adversarial search algorithm that is commonly employed in two-player games for machine play. It stops examining a move when at least one alternative that proves the move is worse than a previously discovered option has been found.
 
 ### Alpha-Beta Example: 
-  ![This is an image](https://materiaalit.github.io/intro-to-ai/img/diagrams/tictactoe-alphabeta-e8cb918f.png)
+  ![This is an image](https://telegra.ph/file/b60988e65546f258efaf1.png)
   
 
 
