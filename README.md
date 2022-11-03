@@ -53,7 +53,7 @@ Every AI move is based on the final output. If we want to create an AI that neve
 Minimax is a type of artificial intelligence that is used in two-player games like tic-tac-toe, checkers, chess, and go. This type of game is known as a "zero-sum game" because, in a mathematical representation, one player wins (+1) and the other loses (-1) or neither player wins (0).  
  
 ### Minimax Example: 
-  ![This is an image](http://nestedsoftware.com/assets/images/2019-06-15-tic-tac-toe-with-the-minimax-algorithm-5988.123625/eo3qr44bp1w96a92t8s2.png)
+  ![This is an image](https://telegra.ph/file/7d91d51a81b22c38c6aa7.png)
   
 ## Alpha-Beta Algorithm: 
 
