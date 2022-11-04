@@ -184,8 +184,8 @@ def alpha_beta(board, alpha, beta, depth, isMaximizing):
         start_time = datetime.datetime.now()
         bestScore = -100
         for key in board.keys():
-            numOfNodes = numOfNodes + 1
             if (board[key] == ' '):
+                numOfNodes = numOfNodes + 1
                 board[key] = bot
                 score = alpha_beta(board, alpha, beta, depth + 1, False)
                 if (score > bestScore):
@@ -209,8 +209,8 @@ def alpha_beta(board, alpha, beta, depth, isMaximizing):
         #by checking and comparing scores for every state and eliminates states (prouning) if condition alpha >= beta Applies
         bestScore = 100
         for key in board.keys():
-            numOfNodes = numOfNodes + 1
             if (board[key] == ' '):
+                numOfNodes = numOfNodes + 1
                 board[key] = player
                 score = alpha_beta(board, alpha, beta, depth + 1, True)
                 if (score < bestScore):
