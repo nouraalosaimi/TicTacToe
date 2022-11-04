@@ -7,7 +7,8 @@
 * [Problem and its formulation](#Problem-and-its-formulation) 
 * [Game Tree](#Game-Tree) 
 * [Minimax Algorithm](#Minimax=Algorithm) 
-* [Alpha-Beta Algorithm](#Alpha-Beta-Algorithm) 
+* [Alpha-Beta Algorithm](#Alpha-Beta-Algorithm)
+* [GUI](#GUI)
 * [Arabic virsion](#Arabic-virsion)
 <a name="headers"/>
 
@@ -75,6 +76,16 @@ Alpha-beta pruning is a search strategy that seeks to minimize the number of nod
  
   <img width="500" alt="Screen Shot 2022-11-04 at 1 06 47 PM" src="https://user-images.githubusercontent.com/75557453/199947380-596ead8a-3afe-4948-9fbc-407265dd9eed.png">
 
+
+## GUI
+
+<img width="200" alt="main" src="https://user-images.githubusercontent.com/75557453/199968883-313c8bf9-5af8-4b4e-99a0-61f7d6cc39a4.png">
+<img width="200" alt="alphaBeta" src="https://user-images.githubusercontent.com/75557453/199968342-1b017f7f-d8a2-470f-8676-17e6d641d492.png">
+<img width="200" alt="minimax" src="https://user-images.githubusercontent.com/75557453/199968356-764c9c0c-e3f5-4614-9841-938ec8388c5f.png">
+<img width="200" alt="board" src="https://user-images.githubusercontent.com/75557453/199968362-9a166324-9d25-4fdd-8174-7518f9e9abc2.png">
+<img width="200" alt="lose" src="https://user-images.githubusercontent.com/75557453/199968365-d8cea975-e2af-4615-b6b6-5e4b0d7ec1eb.png">
+<img width="200" alt="tie" src="https://user-images.githubusercontent.com/75557453/199968369-ce9d583f-0252-4e67-9a91-531d9df932b2.png">
+<img width="200" alt="win" src="https://user-images.githubusercontent.com/75557453/199968373-f70838d5-eec1-4b81-8712-2c6c8400eb30.png">
 
 
 
