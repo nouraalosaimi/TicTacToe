@@ -1,0 +1,123 @@
+from email.mime import image
+import tkinter as tk
+from PIL import ImageTk, Image
+
+bg_background_color = "#0F2F7F"
+#initiallize app
+root = tk.Tk()
+
+root.title("TicTacToe")
+root.eval("tk::PlaceWindow . center")
+
+#create a frame1 widget for top component
+frame1 = tk.Frame(root, width=390, height=200, bg=bg_background_color)
+frame1.grid()
+frame1.pack_propagate(False)
+
+
+#xAI logo
+#Open Image xAI
+xAI_Openedimg = Image.open("assets/xAI.png")
+#Resize Image xAI
+resized_xAI = xAI_Openedimg.resize((94,94),Image.Resampling.LANCZOS)
+#frame1 widget xAI
+xAI_img = ImageTk.PhotoImage(resized_xAI) #assigning the resized image 
+xAI_widget = tk.Label(frame1, image=xAI_img, bg=bg_background_color)
+xAI_widget.image = xAI_img
+xAI_widget.pack(pady=64)
+xAI_widget.place(x=33,y=64)
+
+
+#oPlayer logo
+#Open Image oPlayer
+oPlayer_Openedimg = Image.open("assets/oPlayer.png")
+#Resize Image oPlayer
+resized_oPlayer = oPlayer_Openedimg.resize((94,94),Image.Resampling.LANCZOS)
+#frame1 widget oPlayer
+oPlayer_img = ImageTk.PhotoImage(resized_oPlayer) #assigning the resized image 
+oPlayer_widget = tk.Label(frame1, image=oPlayer_img, bg=bg_background_color)
+oPlayer_widget.image = oPlayer_img
+oPlayer_widget.pack(pady=64)
+oPlayer_widget.place(x=263,y=64)
+
+#Player titles
+#AI Label
+AI_Player_Label = tk.Label(
+    frame1,
+    text="AI",
+    bg= bg_background_color,
+    fg="white",
+    font=("TkMenuFonts",18)
+)
+AI_Player_Label.pack()
+AI_Player_Label.place(x= 71, y=168)
+
+#Player Label
+Player_Label = tk.Label(
+    frame1,
+    text="You",
+    bg= bg_background_color,
+    fg="white",
+    font=("TkMenuFonts",18)
+)
+Player_Label.pack()
+Player_Label.place(x= 293, y=168)
+
+
+#create a frame2 widget for the board
+frame2 = tk.Frame(root, width=390, height=644, bg=bg_background_color)
+frame2.grid()
+frame2.pack_propagate(False)
+
+
+#Board
+#Define image
+bg_board = ImageTk.PhotoImage(file= "assets/board.png")
+#Create a label for the board image
+board_widget = tk.Label(frame2, image=bg_board, bg=bg_background_color)
+board_widget.place(x=0,y=-120,relwidth=1,relheight=1)
+
+
+#Board Buttons
+#Button function
+def bttn(x,y,img1,cmd):
+    image1 = ImageTk.PhotoImage(Image.open(img1))
+
+    def on_leave(e):
+        mybtn["image"]=image1
+
+    mybtn = tk.Button(frame2,
+                        image=image1,
+                        borderwidth=0,
+                        cursor="hand2",
+                        command=cmd,
+                        relief='flat')
+    mybtn.bind("<Leave>",on_leave)                
+    mybtn.place(x=x,y=y)
+
+#cmd funtion
+def load_frame2():
+    print("button is active")
+
+
+    
+#buttons & potions
+button1 = bttn(66,70,"assets/boardButton.png",load_frame2)
+button2 = bttn(158,70,"assets/boardButton.png",load_frame2)
+button3 = bttn(250,70,"assets/boardButton.png",load_frame2)
+
+button4 = bttn(66,160,"assets/boardButton.png",load_frame2)
+button5 = bttn(158,160,"assets/boardButton.png",load_frame2)
+button6 = bttn(250,160,"assets/boardButton.png",load_frame2)
+
+button7 = bttn(66,252,"assets/boardButton.png",load_frame2)
+button8 = bttn(158,252,"assets/boardButton.png",load_frame2)
+button9 = bttn(250,252,"assets/boardButton.png",load_frame2)
+
+
+
+
+
+
+#run app
+root.mainloop()
