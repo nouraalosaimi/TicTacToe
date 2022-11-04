@@ -81,7 +81,7 @@ Alpha-beta pruning is a search strategy that seeks to minimize the number of nod
 ## Araic virsion
 ## تيك - تاك - تو
 
-##المقدمة 
+## المقدمة 
 
 يغطي هذا المشروع وصفًا وحلًا لمشكلة لعبة Tic-Tac-Toe وتنفيذها بأفضل خوارزمية لتطبيق قواعد اللعبة وتقديم أفضل الطرق لضمان الفوز.
 
