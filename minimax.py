@@ -183,8 +183,8 @@ def minimax(board, depth, isMaximizing):
         start_time = datetime.datetime.now()
         bestScore = -100
         for key in board.keys():
-            numOfNodes = numOfNodes + 1
             if (board[key] == ' '):
+                numOfNodes = numOfNodes + 1
                 board[key] = bot
                 score = minimax(board, depth + 1, False)
                 board[key] = ' '
@@ -202,9 +202,9 @@ def minimax(board, depth, isMaximizing):
         #by checking and comparing scores for every state
         bestScore = 100
         start_time = datetime.datetime.now()
-        for key in board.keys():
-            numOfNodes = numOfNodes + 1
+        for key in board.keys(): 
             if (board[key] == ' '):
+                numOfNodes = numOfNodes + 1
                 board[key] = player
                 score = minimax(board, depth + 1, True)
                 board[key] = ' '
