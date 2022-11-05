@@ -201,7 +201,6 @@ def minimax(board, depth, isMaximizing):
     else: #Minimizing: find the best lowest score (tries to minimaze score for the opposite player) 
         #by checking and comparing scores for every state
         bestScore = 100
-        start_time = datetime.datetime.now()
         for key in board.keys(): 
             if (board[key] == ' '):
                 numOfNodes = numOfNodes + 1
